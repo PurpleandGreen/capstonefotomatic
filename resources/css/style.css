@@ -328,7 +328,6 @@ header .mobile {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 64px;
   padding: 0 auto;
 }
 
@@ -392,26 +391,35 @@ header .mobile {
 /* Quotes Section */
 
 #quotes-section {
+  display: flex;
   background-color: #f3f3f3;
 }
 
 #quotes-section .contentcenter {
   display: block;
-  align-items: center;
   padding: 5rem 0;
   height: 190px;
+  width: 100%;
 }
 
 #quotes-section .quote {
+  display: inline-block;
+  margin-top: 80px;
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  text-align: center;
+  width: 0 auto;
+  height: auto;
+  margin-right: 30px;
+  margin-left: 500px; 
 }
 
 #quotes-section quote-citation {
+  display:inline-block;
   height: 1.875rem;
 }
 
