@@ -5,6 +5,20 @@ html {
   font-size: 16px;
 }
 
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -111,15 +125,24 @@ header .mobile {
 }
 
 /* Sign Up Section */
-
+ .banner {
+   display: flex;
+ }
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
+  position: absolute;
+  top: 171px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -221,6 +244,7 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  margin-top: 64px;
 }
 
 .feature .image-container {
